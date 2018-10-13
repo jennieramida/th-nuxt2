@@ -1,0 +1,25 @@
+$sm: 640px;
+$md: 900px;
+$lg: 1200px;
+$primary: #941e2e;
+$secondary: #f8f8f9;
+
+@mixin breakpoint($point) {
+  @if $point==desktop {
+    @media (min-width: $md) {
+      @content;
+    }
+  }
+
+  @else if $point==laptop {
+    @media (max-width: $md) {
+      @content;
+    }
+  }
+
+  @else if $point==mobile {
+    @media (max-width: $sm) {
+      @content;
+    }
+  }
+}
