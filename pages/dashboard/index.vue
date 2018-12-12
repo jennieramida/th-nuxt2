@@ -1,15 +1,16 @@
 <template>
 <div class="_w-100pct Prompt">
 <header-t-h></header-t-h>
-  <div class="container">
+  <div class="container _mgbt-64px">
     <div class="row _jtfct-ct">
       <div class="col-12 _cl-red _fs-4 _tal-ct _pdt-48px _pdbt-12px _fw-500 _mgbt-12px">
         งานของคุณ
       </div>
       <!-- If don't have current job -->
       <div class="col-12 _tal-ct _fs-5 _lh-125pct">
-        ขณะนี้คุณยังไม่ได้รับงาน <br>คุณสามารถเลือกดูงานได้ 
-        <nuxt-link to="/"><span class="_cl-red hover-underline-animation-red">ที่นี่</span></nuxt-link>
+        ขณะนี้คุณยังไม่ได้รับงาน <br> คุณสามารถเลือกดูงานได้จากงานทั้งหมด
+        <!-- <br>คุณสามารถเลือกดูงานได้ 
+        <nuxt-link to="/"><span class="_cl-red hover-underline-animation-red">ที่นี่</span></nuxt-link> -->
       </div>
       <!-- If have job(s) -->
         <!-- <div class="col-md-5 col-12">

@@ -16,11 +16,9 @@
           </div>
           <div>
             <nuxt-link 
-              v-scroll-to="'#about'"
-              to="/#about"> 
-              <a 
-                href="#"
-                class="hover-underline-animation _cl-white">ประวัติงานทั้งหมด</a>
+              to="/dashboard/profile/history"> 
+              <span
+                class="hover-underline-animation _cl-white">ประวัติงานทั้งหมด</span>
             </nuxt-link>
           </div>
           <div>

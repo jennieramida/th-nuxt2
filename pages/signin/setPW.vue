@@ -35,7 +35,7 @@
         <div 
           v-scroll-reveal="{viewFactor:0.5, delay:100,scale: 1, origin:'top', distance:'20px', easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)' , opacity: 0, duration: 1000}" 
           class="_dp-f _jtfct-ct _pdv-24px _pdt-48px _pdt-24px-md ">
-        <nuxt-link to="/user">
+        <nuxt-link to="/dashboard">
             <button 
             id="show-modal" 
             class="bio-button header-button u-rise-5-hover _mgv-24px-md _mgbt-0px _cl-darkred _bdrd-4px u-rise-5-hover">ยืนยัน
