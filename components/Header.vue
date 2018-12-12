@@ -1,0 +1,167 @@
+<template>
+  <header>
+    <div class="container-fluid Prompt _bgcl-red"> 
+    <div class="container">
+        <div class="row _pdv-16px _alit-ct _jtfct-spbtw">
+        <div class="col-3">
+          <img src="~/assets/images/logo.svg" class="_h-48px">
+        </div>
+        <div class="col-6 _dp-f _jtfct-spbtw _pdl-128px _alit-ct">
+          <div>
+            <nuxt-link 
+              v-scroll-to="'#services'"
+              to="/#services"> 
+              <a 
+                href="#"
+                class="hover-underline-animation _cl-white"> โปรไฟล์ของคุณ</a>
+            </nuxt-link>
+          </div>
+          <div>
+            <nuxt-link 
+              v-scroll-to="'#about'"
+              to="/#about"> 
+              <a 
+                href="#"
+                class="hover-underline-animation _cl-white">ประวัติงานทั้งหมด</a>
+            </nuxt-link>
+          </div>
+          <div>
+            <nuxt-link 
+              to="/signin"
+              class="hover-underline-animation _cl-white">
+              ออกจากระบบ
+            </nuxt-link>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </header>
+</template>
+
+<style lang="scss" scoped>
+$primary: #941e2e;
+
+.header-mobile {
+  background-color: white;
+  box-shadow: 0px 0px 5px 1px gainsboro;
+}
+._cl-darkred {
+  color: $primary;
+}
+.header-button {
+  background-color: transparent;
+  border-color: $primary;
+  &:hover {
+    background-color: $primary;
+    color: white;
+    transition: 0.3s;
+  }
+}
+
+:any-link {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0) translateY(4px);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    cursor: pointer;
+  }
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1) translateY(4px);
+  transform-origin: bottom left;
+  cursor: pointer;
+}
+
+.hamburger-btn {
+  width: 33px;
+  height: 3px;
+  background: $primary;
+  border-radius: 8px;
+  position: absolute;
+  transition: 0.2s;
+  :not(.-open) {
+    &:hover {
+      width: 28px;
+      &::before {
+        width: 33px;
+      }
+      &::after {
+        width: 30px;
+      }
+    }
+  }
+
+  &::before {
+    width: 28px;
+    position: absolute;
+    height: 3px;
+    background: $primary;
+    border-radius: 8px;
+    content: ' ';
+    top: -11px;
+    right: 0px;
+    transition: 0.2s;
+  }
+
+  &::after {
+    position: absolute;
+    width: 28px;
+    height: 3px;
+    background: $primary;
+    border-radius: 8px;
+    content: ' ';
+    top: 11px;
+    right: 0px;
+    transition: 0.2s;
+  }
+}
+
+.hamburger-container {
+  z-index: 70 !important;
+  &.-open {
+    .hamburger-btn {
+      background: $primary;
+      background-color: $primary;
+      position: fixed;
+      &::before {
+        width: 33px;
+        top: 0px;
+        transform: rotate(-45deg);
+        transition: 0.2s;
+        background: white;
+        content: ' ';
+        &:hover {
+          width: 33px;
+        }
+      }
+      &::after {
+        width: 33px;
+        top: 0px;
+        transform: rotate(45deg);
+        transition: 0.2s;
+        background: white;
+        content: ' ';
+        &:hover {
+          width: 33px;
+        }
+      }
+    }
+  }
+}
+</style>

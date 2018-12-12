@@ -64,6 +64,39 @@ button {
   background-color: $primary;
 }
 
+._cl-red {
+  color: $primary;
+}
+
 .Prompt {
   font-family: 'Prompt', sans-serif;
+}
+
+
+.box-shadow {
+  box-shadow: 10px 10px 20px rgba(204, 191, 191,0.4);
+}
+.hover-underline-animation-red {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0) translateY(4px);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: $primary;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    cursor: pointer;
+  }
+}
+
+.hover-underline-animation-red:hover::after {
+  transform: scaleX(1) translateY(4px);
+  transform-origin: bottom left;
+  cursor: pointer;
 }
