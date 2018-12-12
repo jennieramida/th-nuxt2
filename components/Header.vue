@@ -3,17 +3,15 @@
     <div class="container-fluid Prompt _bgcl-red"> 
     <div class="container">
         <div class="row _pdv-16px _alit-ct _jtfct-spbtw">
-        <div class="col-3">
-          <img src="~/assets/images/logo.svg" class="_h-48px">
+        <div class="col-md-3 col-6">
+          <img src="~/assets/images/logo.svg" class="_h-48px-md _h-32px">
         </div>
-        <div class="col-6 _dp-f _jtfct-spbtw _pdl-128px _alit-ct">
+        <div class="col-6 _dp-f-md _dp-n _jtfct-spbtw _pdl-128px _alit-ct">
           <div>
             <nuxt-link 
-              v-scroll-to="'#services'"
-              to="/#services"> 
-              <a 
-                href="#"
-                class="hover-underline-animation _cl-white"> โปรไฟล์ของคุณ</a>
+              to="/dashboard/profile"> 
+              <span 
+                class="hover-underline-animation _cl-white"> โปรไฟล์ของคุณ</span>
             </nuxt-link>
           </div>
           <div>
