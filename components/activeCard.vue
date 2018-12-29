@@ -1,5 +1,5 @@
 <template>
-    <div class="container _bgcl-white box-shadow _mgbt-16px _fs-6 _bdrd-8px _lh-175pct-md _lh-150pct">
+    <div class="container _bgcl-white box-shadow _mgbt-16px _mgh-0px _fs-6 _bdrd-8px _lh-175pct-md _lh-150pct">
       <div class="row _jtfct-ct _pdbt-12px _pdt-16px _cl-red">
         <div class="col-12 _tal-ct _fw-500 _fs-5">
           รหัสงาน  {{ code }}
@@ -23,7 +23,7 @@
       </div>
       <div class="row _jtfct-ct _mgbt-16px">
         <!-- If can progress or in the progress -->
-          <nuxt-link to="/dashboard/jobs/_slug">
+          <nuxt-link to="/dashboard/_slug">
             <button 
               id="show-modal" 
               class="bio-button u-rise-3-hover _mgv-16px _mgbt-24px _cl-white _bgcl-red _bdrd-4px _bdw-0px">ดำเนินการ

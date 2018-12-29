@@ -3,18 +3,20 @@
     <div class="container-fluid Prompt _bgcl-red"> 
     <div class="container">
         <div class="row _pdv-16px _alit-ct _jtfct-spbtw">
-        <div class="col-md-3 col-6">
-          <img src="~/assets/images/logo.svg" class="_h-48px-md _h-32px">
+        <div class="col-md-2 col-6">
+          <nuxt-link to="/dashboard">
+            <img src="~/assets/images/logo.svg" class="_h-48px-md _h-32px">
+          </nuxt-link>
         </div>
-        <div class="col-6 _dp-f-md _dp-n _jtfct-spbtw _pdl-128px _alit-ct">
-          <div>
+        <div class="col-md-10 _dp-f-md _dp-n _jtfct-fe _pdl-128px _alit-ct">
+          <div class="_mgr-24px">
             <nuxt-link 
               to="/dashboard/profile"> 
               <span 
                 class="hover-underline-animation _cl-white"> โปรไฟล์ของคุณ</span>
             </nuxt-link>
           </div>
-          <div>
+          <div class="_mgr-24px">
             <nuxt-link 
               to="/dashboard/profile/history"> 
               <span
@@ -29,11 +31,34 @@
             </nuxt-link>
           </div>
         </div>
+        <div class="col-6 _dp-f _dp-n-md _jtfct-fe">
+          <button
+            :class="{'-open': isShowingMenu }"
+            class="bio-button _pd-0px _zid-1 _bgcl-tpr _bdcl-tpr hamburger-container _w-32px _h-32px _dp-f"
+            @click=" isShowingMenu = !isShowingMenu">
+            <div class="hamburger-btn"/>
+          </button>
+          <fade-transition>
+            <HBGMenu v-show="isShowingMenu"/>
+          </fade-transition>
+        </div>
       </div>
     </div>
     </div>
   </header>
 </template>
+
+<script>
+import HBGMenu from '~/components/HBGMenu'
+export default {
+  components: {
+    HBGMenu
+  },
+  data:() => ({
+    isShowingMenu: false
+  })
+}
+</script>
 
 <style lang="scss" scoped>
 $primary: #941e2e;
@@ -87,7 +112,7 @@ $primary: #941e2e;
 .hamburger-btn {
   width: 33px;
   height: 3px;
-  background: $primary;
+  background: white;
   border-radius: 8px;
   position: absolute;
   transition: 0.2s;
@@ -107,7 +132,7 @@ $primary: #941e2e;
     width: 28px;
     position: absolute;
     height: 3px;
-    background: $primary;
+    background: white;
     border-radius: 8px;
     content: ' ';
     top: -11px;
@@ -119,7 +144,7 @@ $primary: #941e2e;
     position: absolute;
     width: 28px;
     height: 3px;
-    background: $primary;
+    background: white;
     border-radius: 8px;
     content: ' ';
     top: 11px;

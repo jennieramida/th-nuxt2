@@ -3,11 +3,14 @@
 <header-t-h></header-t-h>
   <div class="container">
     <div class="row _jtfct-ct _mgt-48px">
-    <div class="col-12 _tal-l _fs-6-md _fs-7">
-      <nuxt-link to="/dashboard" class="_cl-dark">← ย้อนกลับ</nuxt-link>
-    </div>
-    <div class="col-12 _cl-red _fs-4 _tal-ct _pdt-24px _pdbt-12px _fw-500 _mgbt-12px">
-      รหัสงาน <span v-html="'TH0001'"></span>
+      <div class="col-12 _tal-l _fs-6-md _fs-7">
+        <nuxt-link to="/dashboard" class="_cl-dark">← ย้อนกลับ</nuxt-link>
+      </div>
+      <div class="col-12 _cl-red _fs-4 _tal-ct _pdt-24px _fw-500">
+        ดำเนินการ
+      </div>
+      <div class="_pdbt-24px _pdt-8px">
+        รหัสงาน <span v-html="'TH0001'"></span>
       </div>
     </div>
     <div class="row _jtfct-ct _lh-175pct">
@@ -105,14 +108,6 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="row _jtfct-ct _mgt-24px">
-      <nuxt-link to="/">
-        <button 
-          id="show-modal" 
-          class="bio-button u-rise-3-hover _mgv-16px _mgbt-24px _cl-white _bgcl-red _bdrd-4px _bdw-0px _fs-5 _pdh-32px">รับงานนี้
-        </button>
-      </nuxt-link>
     </div>
   </div>
 </div>

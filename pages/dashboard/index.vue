@@ -7,31 +7,34 @@
         งานของคุณ
       </div>
       <!-- If don't have current job -->
-      <div class="col-12 _tal-ct _fs-5 _lh-125pct">
+      <!-- <div class="col-12 _tal-ct _fs-5 _lh-125pct">
         ขณะนี้คุณยังไม่ได้รับงาน <br> คุณสามารถเลือกดูงานได้จากงานทั้งหมด
-        <!-- <br>คุณสามารถเลือกดูงานได้ 
-        <nuxt-link to="/"><span class="_cl-red hover-underline-animation-red">ที่นี่</span></nuxt-link> -->
-      </div>
-      <!-- If have job(s) -->
-        <!-- <div class="col-md-5 col-12">
-      <active-card></active-card>
       </div> -->
+      <!-- If have job(s) -->
+
+      <div class="col-md-6 col-12">
+      <active-card></active-card>
+      </div>
+      <div class="col-md-6 col-12">
+      <active-card></active-card>
+      </div>
       <div class="col-12 _w-100pct-md _w-50pct _bdbtw-1px _mgt-48px _bdcl-red"></div>
+
     </div>
     <div class="row _jtfct-ct">
       <div class="col-12 _cl-red _fs-4 _tal-ct _pdt-48px _pdbt-12px _fw-500 _mgbt-12px">
         งานทั้งหมด
       </div>
-      <div class="col-md-5 col-12">
+      <div class="col-md-6 col-12">
       <job-card></job-card>
       </div>
-        <div class="col-md-5 col-12">
+        <div class="col-md-6 col-12">
       <job-card></job-card>
       </div>
-      <div class="col-md-5 col-12">
+      <div class="col-md-6 col-12">
       <job-card></job-card>
       </div>
-        <div class="col-md-5 col-12">
+        <div class="col-md-6 col-12">
       <job-card></job-card>
       </div>
       </div>
