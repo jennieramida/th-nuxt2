@@ -1,7 +1,7 @@
 <template>
     <div class="container _bgcl-white box-shadow _pst-rlt _mgbt-24px _fs-6 _bdrd-8px _lh-175pct-md _lh-150pct">
-        <div class="_dp-f _alit-ct _jtfct-ct _pst-asl _h-48px _w-48px _bgcl-positive _t-0px _r-24px _bdbtrrd-8px _bdbtlrd-8px">
-          <img src="~/assets/images/checked.svg" class="_w-24px _h-24px">
+        <div class="_dp-f _alit-ct _jtfct-ct _pst-asl _h-48px _w-48px _bgcl-warning _t-0px _r-24px _bdbtrrd-8px _bdbtlrd-8px">
+          <img src="~/assets/images/upcoming.svg" class="_w-24px _h-24px">
         </div>
       <div class="row _jtfct-ct _pdv-24px _cl-red">
         <div class="col-12 _tal-ct _fw-500 _fs-5">

@@ -25,18 +25,24 @@
       <div class="col-12 _cl-red _fs-4 _tal-ct _pdt-48px _pdbt-12px _fw-500 _mgbt-12px">
         งานทั้งหมด
       </div>
-      <div class="col-md-6 col-12">
-      <job-card></job-card>
-      </div>
-        <div class="col-md-6 col-12">
-      <job-card></job-card>
-      </div>
-      <div class="col-md-6 col-12">
-      <job-card></job-card>
-      </div>
-        <div class="col-md-6 col-12">
-      <job-card></job-card>
-      </div>
+        <div class="col-md-4 col-12">
+          <urgent-card></urgent-card>
+        </div>
+        <div class="col-md-4 col-12">
+          <urgent-card></urgent-card>
+        </div>
+        <div class="col-md-4 col-12">
+          <job-card></job-card>
+        </div>
+        <div class="col-md-4 col-12">
+          <job-card></job-card>
+        </div>
+        <div class="col-md-4 col-12">
+          <upcoming-card></upcoming-card>
+        </div>
+        <div class="col-md-4 col-12">
+          <upcoming-card></upcoming-card>
+        </div>
       </div>
   </div>
 </div>
@@ -44,13 +50,17 @@
 
 <script>
 import HeaderTH from '~/components/Header'
-import JobCard from '~/components/jobCard'
+import urgentCard from '~/components/urgentCard'
 import ActiveCard from '~/components/activeCard'
+import jobCard from '~/components/jobCard'
+import upcomingCard from '~/components/upcomingCard'
 export default {
 components: {
   HeaderTH,
-  JobCard,
-  ActiveCard
+  urgentCard,
+  ActiveCard,
+  jobCard,
+  upcomingCard
 }
 }
 </script>

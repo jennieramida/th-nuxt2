@@ -34,7 +34,7 @@
         </div>
         <!-- Withdral -->
             <div class="row _jtfct-ct _mgbt-16px _mgt-0px-md _mgt-24px">
-            <button 
+            <button @click="$modal.show('balance')"
               id="show-modal" 
               class=" bio-button header-button-red  _mgv-24px-md _mgbt-0px _cl-darkred _bdrd-4px u-rise-5-hover">ถอนเงิน
             </button>
@@ -63,7 +63,7 @@
             </span>
           </div>
         </div>
-        <pw-modal></pw-modal>
+        <balance-modal></balance-modal>
       </div>
         </div>
     </div>
@@ -73,15 +73,11 @@
 
 <script>
 import HeaderTH from '~/components/Header'
-import JobCard from '~/components/jobCard'
-import ActiveCard from '~/components/activeCard'
-import pwModal from '~/components/pwModal'
+import balanceModal from '~/components/balanceModal'
 export default {
 components: {
   HeaderTH,
-  JobCard,
-  ActiveCard,
-  pwModal
+  balanceModal
 }
 }
 </script>

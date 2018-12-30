@@ -120,13 +120,11 @@
 
 <script>
 import HeaderTH from '~/components/Header'
-import JobCard from '~/components/jobCard'
 import ActiveCard from '~/components/activeCard'
 import pwModal from '~/components/pwModal'
 export default {
 components: {
   HeaderTH,
-  JobCard,
   ActiveCard,
   pwModal
 }
