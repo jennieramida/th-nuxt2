@@ -18,6 +18,11 @@
       <div class="col-md-6 col-12">
       <active-card></active-card>
       </div>
+      <div class="col-12 _pdv-12px _pdt-24px _tal-ct">
+        <nuxt-link to="/dashboard/jobs/active" class=" _cl-red _fs-6  _cs-pt hover-underline-animation">
+        ดูงานทั้งหมดของคุณขณะนี้
+        </nuxt-link>
+      </div>
       <div class="col-12 _w-100pct-md _w-50pct _bdbtw-1px _mgt-48px _bdcl-red"></div>
 
     </div>

@@ -8,6 +8,12 @@
             <ul>
               <li>
                 <nuxt-link 
+                  to="/dashboard" 
+                  class="_cl-white hover-underline-animation">
+                  งานทั้งหมด</nuxt-link>
+              </li>
+              <li>
+                <nuxt-link 
                   to="/dashboard/profile" 
                   class="_cl-white hover-underline-animation">
                   โปรไฟล์ของคุณ</nuxt-link>

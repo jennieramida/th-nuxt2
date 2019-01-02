@@ -9,6 +9,13 @@
           </nuxt-link>
         </div>
         <div class="col-md-10 _dp-f-md _dp-n _jtfct-fe _pdl-128px _alit-ct">
+           <div class="_mgr-24px">
+            <nuxt-link 
+              to="/dashboard"> 
+              <span 
+                class="hover-underline-animation _cl-white"> งานทั้งหมด</span>
+            </nuxt-link>
+          </div>
           <div class="_mgr-24px">
             <nuxt-link 
               to="/dashboard/profile"> 

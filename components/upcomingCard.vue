@@ -7,6 +7,9 @@
         <div class="col-12 _tal-ct _fw-500 _fs-5">
           รหัสงาน  {{ code }} 
         </div> 
+        <div class="col-12 _cl-warning _tal-ct">
+          งานจะเกิดขึ้นในวันนี้
+        </div>
       </div>
       <div class="row _jtfct-ct">
         <div class="_pdl-0px _tal-r col-md-4 col-4 _fw-500">

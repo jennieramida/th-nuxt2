@@ -1,12 +1,15 @@
 <template>
     <div class="container _bgcl-white box-shadow _pst-rlt _mgbt-24px _fs-6 _bdrd-8px _lh-175pct-md _lh-150pct">
-        <div class="_dp-f _alit-ct _jtfct-ct _pst-asl _h-48px _w-48px _bgcl-positive _t-0px _r-24px _bdbtrrd-8px _bdbtlrd-8px">
+        <!-- <div class="_dp-f _alit-ct _jtfct-ct _pst-asl _h-48px _w-48px _bgcl-positive _t-0px _r-24px _bdbtrrd-8px _bdbtlrd-8px">
           <img src="~/assets/images/checked.svg" class="_w-24px _h-24px">
-        </div>
+        </div> -->
       <div class="row _jtfct-ct _pdv-24px _cl-red">
         <div class="col-12 _tal-ct _fw-500 _fs-5">
           รหัสงาน  {{ code }} 
         </div> 
+        <div class="col-12 _cl-positive _tal-ct">
+          งานนี้ยังว่างอยู่
+        </div>
       </div>
       <div class="row _jtfct-ct">
         <div class="_pdl-0px _tal-r col-md-4 col-4 _fw-500">
